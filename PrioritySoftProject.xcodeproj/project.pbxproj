@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FDB354282D93EE88004CE46A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB3540F2D93EE85004CE46A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB354162D93EE85004CE46A;
+			remoteInfo = "Priority Soft Project";
+		};
+		FDB354322D93EE88004CE46A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB3540F2D93EE85004CE46A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB354162D93EE85004CE46A;
+			remoteInfo = "Priority Soft Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDB354172D93EE85004CE46A /* PrioritySoftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrioritySoftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB354272D93EE88004CE46A /* PrioritySoftProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrioritySoftProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB354312D93EE88004CE46A /* PrioritySoftProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrioritySoftProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FDB354192D93EE85004CE46A /* PrioritySoftProject */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrioritySoftProject;
+			sourceTree = "<group>";
+		};
+		FDB3542A2D93EE88004CE46A /* PrioritySoftProjectTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrioritySoftProjectTests;
+			sourceTree = "<group>";
+		};
+		FDB354342D93EE88004CE46A /* PrioritySoftProjectUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrioritySoftProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB354142D93EE85004CE46A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB354242D93EE88004CE46A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB3542E2D93EE88004CE46A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD7AC89C2D94281A00F87AFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDB3540E2D93EE85004CE46A = {
+			isa = PBXGroup;
+			children = (
+				FDB354192D93EE85004CE46A /* PrioritySoftProject */,
+				FDB3542A2D93EE88004CE46A /* PrioritySoftProjectTests */,
+				FDB354342D93EE88004CE46A /* PrioritySoftProjectUITests */,
+				FD7AC89C2D94281A00F87AFD /* Frameworks */,
+				FDB354182D93EE85004CE46A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDB354182D93EE85004CE46A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDB354172D93EE85004CE46A /* PrioritySoftProject.app */,
+				FDB354272D93EE88004CE46A /* PrioritySoftProjectTests.xctest */,
+				FDB354312D93EE88004CE46A /* PrioritySoftProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDB354162D93EE85004CE46A /* PrioritySoftProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB3543B2D93EE88004CE46A /* Build configuration list for PBXNativeTarget "PrioritySoftProject" */;
+			buildPhases = (
+				FDB354132D93EE85004CE46A /* Sources */,
+				FDB354142D93EE85004CE46A /* Frameworks */,
+				FDB354152D93EE85004CE46A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FDB354192D93EE85004CE46A /* PrioritySoftProject */,
+			);
+			name = PrioritySoftProject;
+			packageProductDependencies = (
+			);
+			productName = "Priority Soft Project";
+			productReference = FDB354172D93EE85004CE46A /* PrioritySoftProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDB354262D93EE88004CE46A /* PrioritySoftProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB3543E2D93EE88004CE46A /* Build configuration list for PBXNativeTarget "PrioritySoftProjectTests" */;
+			buildPhases = (
+				FDB354232D93EE88004CE46A /* Sources */,
+				FDB354242D93EE88004CE46A /* Frameworks */,
+				FDB354252D93EE88004CE46A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB354292D93EE88004CE46A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FDB3542A2D93EE88004CE46A /* PrioritySoftProjectTests */,
+			);
+			name = PrioritySoftProjectTests;
+			packageProductDependencies = (
+			);
+			productName = "Priority Soft ProjectTests";
+			productReference = FDB354272D93EE88004CE46A /* PrioritySoftProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDB354302D93EE88004CE46A /* PrioritySoftProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB354412D93EE88004CE46A /* Build configuration list for PBXNativeTarget "PrioritySoftProjectUITests" */;
+			buildPhases = (
+				FDB3542D2D93EE88004CE46A /* Sources */,
+				FDB3542E2D93EE88004CE46A /* Frameworks */,
+				FDB3542F2D93EE88004CE46A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB354332D93EE88004CE46A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FDB354342D93EE88004CE46A /* PrioritySoftProjectUITests */,
+			);
+			name = PrioritySoftProjectUITests;
+			packageProductDependencies = (
+			);
+			productName = "Priority Soft ProjectUITests";
+			productReference = FDB354312D93EE88004CE46A /* PrioritySoftProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDB3540F2D93EE85004CE46A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					FDB354162D93EE85004CE46A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FDB354262D93EE88004CE46A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FDB354162D93EE85004CE46A;
+					};
+					FDB354302D93EE88004CE46A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FDB354162D93EE85004CE46A;
+					};
+				};
+			};
+			buildConfigurationList = FDB354122D93EE85004CE46A /* Build configuration list for PBXProject "PrioritySoftProject" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDB3540E2D93EE85004CE46A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FDB354182D93EE85004CE46A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB354162D93EE85004CE46A /* PrioritySoftProject */,
+				FDB354262D93EE88004CE46A /* PrioritySoftProjectTests */,
+				FDB354302D93EE88004CE46A /* PrioritySoftProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDB354152D93EE85004CE46A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB354252D93EE88004CE46A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB3542F2D93EE88004CE46A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDB354132D93EE85004CE46A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB354232D93EE88004CE46A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB3542D2D93EE88004CE46A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDB354292D93EE88004CE46A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB354162D93EE85004CE46A /* PrioritySoftProject */;
+			targetProxy = FDB354282D93EE88004CE46A /* PBXContainerItemProxy */;
+		};
+		FDB354332D93EE88004CE46A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB354162D93EE85004CE46A /* PrioritySoftProject */;
+			targetProxy = FDB354322D93EE88004CE46A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FDB354392D93EE88004CE46A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDB3543A2D93EE88004CE46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB3543C2D93EE88004CE46A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrioritySoftProject/Preview Content\"";
+				DEVELOPMENT_TEAM = N27ZP3RXW5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Priority-Soft-Project-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to take photos.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location to tag images with GPS data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.milpre.Priority-Soft-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDB3543D2D93EE88004CE46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrioritySoftProject/Preview Content\"";
+				DEVELOPMENT_TEAM = N27ZP3RXW5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Priority-Soft-Project-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to take photos.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location to tag images with GPS data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.milpre.Priority-Soft-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDB3543F2D93EE88004CE46A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N27ZP3RXW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.milpre.Priority-Soft-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrioritySoftProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrioritySoftProject";
+			};
+			name = Debug;
+		};
+		FDB354402D93EE88004CE46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N27ZP3RXW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.milpre.Priority-Soft-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrioritySoftProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrioritySoftProject";
+			};
+			name = Release;
+		};
+		FDB354422D93EE88004CE46A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N27ZP3RXW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.milpre.Priority-Soft-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Priority Soft Project";
+			};
+			name = Debug;
+		};
+		FDB354432D93EE88004CE46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N27ZP3RXW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.milpre.Priority-Soft-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Priority Soft Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDB354122D93EE85004CE46A /* Build configuration list for PBXProject "PrioritySoftProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB354392D93EE88004CE46A /* Debug */,
+				FDB3543A2D93EE88004CE46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB3543B2D93EE88004CE46A /* Build configuration list for PBXNativeTarget "PrioritySoftProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB3543C2D93EE88004CE46A /* Debug */,
+				FDB3543D2D93EE88004CE46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB3543E2D93EE88004CE46A /* Build configuration list for PBXNativeTarget "PrioritySoftProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB3543F2D93EE88004CE46A /* Debug */,
+				FDB354402D93EE88004CE46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB354412D93EE88004CE46A /* Build configuration list for PBXNativeTarget "PrioritySoftProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB354422D93EE88004CE46A /* Debug */,
+				FDB354432D93EE88004CE46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDB3540F2D93EE85004CE46A /* Project object */;
+}
