@@ -5,13 +5,15 @@
 //  Created by Milena Predic on 26.3.25..
 //
 
+import Foundation
 import UIKit
-import ImageIO
 import CoreLocation
+import ImageIO
 
-/// Protocol defining repository methods for image upload and storage.
-protocol HomeRepositoryProtocol {
+/// Protocol defining repository methods for image upload, metadata, and storage.
+protocol MainRepositoryProtocol {
     func isImageGeotagged(_ data: Data) -> Bool
+    func embedLocationIfNeeded(to data: Data, location: CLLocation?) -> Data
     func saveImageToDisk(_ data: Data) -> URL?
     func loadCachedImageURLs() -> [URL]
     func removeImageFromDisk(_ dataToCompare: Data)
@@ -19,14 +21,12 @@ protocol HomeRepositoryProtocol {
     func uploadImageInBackground(_ image: Data, candidateName: String) throws -> UploadResult
 }
 
-/// Handles image uploads and caching.
-final class HomeRepository: HomeRepositoryProtocol {
+/// Handles image uploads, GPS embedding, and local file persistence.
+final class MainRepository: MainRepositoryProtocol {
 
     // MARK: - Properties
 
-    /// Directory used for caching images.
     private let cacheDirectory = FileManager.default.temporaryDirectory.appendingPathComponent("UploadQueue")
-
     private let networkService: NetworkServiceProtocol
     private let fileManager: FileManager
 
@@ -40,7 +40,6 @@ final class HomeRepository: HomeRepositoryProtocol {
 
     // MARK: - Upload Methods
 
-    /// Uploads image in foreground using network service.
     func uploadImage(_ image: Data, candidateName: String) async throws -> UploadResult {
         try await networkService.uploadInForeground(
             router: UploadNetworkRouter.uploadFile(candidateName: candidateName),
@@ -49,21 +48,17 @@ final class HomeRepository: HomeRepositoryProtocol {
         )
     }
 
-    /// Enqueues image for background upload.
     func uploadImageInBackground(_ image: Data, candidateName: String) throws -> UploadResult {
         try networkService.uploadInBackground(
             router: UploadNetworkRouter.uploadFile(candidateName: candidateName),
             data: image,
             candidateName: candidateName
         )
-
-        // Dummy result since actual upload happens in background
-        return UploadResult(downloadUrl: "")
+        return UploadResult(downloadUrl: "") // Dummy, real result comes later
     }
 
-    // MARK: - Geotag & Persistence
+    // MARK: - GPS Metadata
 
-    /// Checks if image contains GPS metadata.
     func isImageGeotagged(_ data: Data) -> Bool {
         let cfData = data as CFData
         guard let source = CGImageSourceCreateWithData(cfData, nil),
@@ -74,7 +69,40 @@ final class HomeRepository: HomeRepositoryProtocol {
         return !gps.isEmpty
     }
 
-    /// Saves image data to disk and returns its file URL.
+    func embedLocationIfNeeded(to data: Data, location: CLLocation?) -> Data {
+        guard let location = location,
+              let source = CGImageSourceCreateWithData(data as CFData, nil),
+              let uti = CGImageSourceGetType(source),
+              let destinationData = CFDataCreateMutable(nil, 0),
+              let destination = CGImageDestinationCreateWithData(destinationData, uti, 1, nil),
+              let metadata = CGImageSourceCopyPropertiesAtIndex(source, 0, nil) as? [CFString: Any] else {
+            return data
+        }
+
+        var mutableMetadata = metadata
+        mutableMetadata[kCGImagePropertyGPSDictionary] = gpsDictionary(for: location)
+
+        CGImageDestinationAddImageFromSource(destination, source, 0, mutableMetadata as CFDictionary)
+        CGImageDestinationFinalize(destination)
+
+        return destinationData as Data? ?? data
+    }
+
+    private func gpsDictionary(for location: CLLocation) -> [CFString: Any] {
+        var gps = [CFString: Any]()
+        gps[kCGImagePropertyGPSLatitude] = abs(location.coordinate.latitude)
+        gps[kCGImagePropertyGPSLatitudeRef] = location.coordinate.latitude >= 0 ? "N" : "S"
+        gps[kCGImagePropertyGPSLongitude] = abs(location.coordinate.longitude)
+        gps[kCGImagePropertyGPSLongitudeRef] = location.coordinate.longitude >= 0 ? "E" : "W"
+        gps[kCGImagePropertyGPSAltitude] = location.altitude
+        gps[kCGImagePropertyGPSAltitudeRef] = location.altitude < 0 ? 1 : 0
+        gps[kCGImagePropertyGPSTimeStamp] = DateFormatter.localizedString(from: location.timestamp, dateStyle: .none, timeStyle: .medium)
+        gps[kCGImagePropertyGPSDateStamp] = DateFormatter.localizedString(from: location.timestamp, dateStyle: .short, timeStyle: .none)
+        return gps
+    }
+
+    // MARK: - Persistence
+
     func saveImageToDisk(_ data: Data) -> URL? {
         try? fileManager.createDirectory(at: cacheDirectory, withIntermediateDirectories: true)
         let filename = UUID().uuidString + ".jpg"
@@ -87,7 +115,6 @@ final class HomeRepository: HomeRepositoryProtocol {
         }
     }
 
-    /// Loads all cached image file URLs from disk.
     func loadCachedImageURLs() -> [URL] {
         guard let fileURLs = try? fileManager.contentsOfDirectory(at: cacheDirectory, includingPropertiesForKeys: nil) else {
             return []
@@ -95,7 +122,6 @@ final class HomeRepository: HomeRepositoryProtocol {
         return fileURLs.filter { $0.pathExtension == "jpg" }
     }
 
-    /// Removes image from disk that matches the given data.
     func removeImageFromDisk(_ dataToCompare: Data) {
         guard let fileURLs = try? fileManager.contentsOfDirectory(at: cacheDirectory, includingPropertiesForKeys: nil) else { return }
 
